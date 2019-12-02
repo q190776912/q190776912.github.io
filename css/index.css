@@ -1,8 +1,12 @@
 .header {
+  position: sticky;
+  top: 0;
   background-color: #525252;
+  border-bottom: 1px solid #555;
+  z-index: 3;
 }
 .header .w {
-  height: 100px;
+  height: 60px;
   display: grid;
   grid-template-columns: 1fr auto;
   grid-template-rows: auto;
@@ -18,6 +22,40 @@
 .header .w nav div a {
   font-size: 20px;
   color: #e9e9e9;
+}
+.header .w nav .money {
+  position: relative;
+}
+.header .w nav .money .qrcode {
+  display: none;
+  position: absolute;
+  left: -110px;
+  top: 30px;
+  background-color: #fff;
+  width: 200px;
+  padding: 20px;
+}
+.header .w nav .money .qrcode i {
+  position: absolute;
+  margin: 0 auto;
+  top: -10px;
+  left: 0;
+  right: 0;
+  width: 10px;
+  height: 10px;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 10px solid #fff;
+}
+.header .w nav .money .qrcode img {
+  width: 100%;
+}
+.header .w nav .money .qrcode p {
+  font-size: 16px;
+  line-height: 20px;
+}
+.header .w nav .money:hover .qrcode {
+  display: block;
 }
 .main {
   background-color: #525252;
