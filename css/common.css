@@ -1,0 +1,35 @@
+div,
+p,
+h1,
+h2,
+h3,
+h4,
+img,
+ul,
+li,
+a,
+span,
+i,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img {
+  border: none;
+  vertical-align: bottom;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+li {
+  list-style: none;
+}
+i {
+  font-style: normal;
+}
+body {
+  font-size: 12px;
+  line-height: 1;
+}
