@@ -1,0 +1,108 @@
+.header {
+    background-color: #525252;
+    .w {
+        height: 100px;
+        display: grid;
+        grid-template-columns: 1fr auto;
+        grid-template-rows: auto;
+        align-items: center;
+        nav {
+            grid-column: 2 / span 1;
+            div {
+                float: left;
+                margin-left: 30px;
+                a {
+                    font-size: 20px;
+                    color: #e9e9e9;
+                }
+            }   
+        }
+    }
+}
+
+.main {
+    background-color: #525252;
+    .w {
+        height: 400px;
+        position: relative;
+        .logo {
+            width: 500px;
+            height: 100px;
+            position: absolute;
+            margin: auto;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            a {
+                letter-spacing: 5px;
+                font-size: 50px;
+                color: #e9e9e9;
+            }
+        }
+    }
+}
+
+.center {
+    padding: 100px 0;
+    .w {
+        display: grid;
+        grid-template-rows: repeat(3, auto);
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 24px;
+        row-gap: 80px;
+        li {
+            height: 340px;
+            background-color: #fff;
+            a {
+                display: block;
+                width: 100%;
+                height: 100%;
+                .view {
+                    width: 100%;
+                    height: 75%;
+                    background-color: #acacac;
+                }
+                p {
+                    margin-top: 10%;
+                    text-align: center;
+                    font-size: 20px;
+                }
+            }
+        }
+        .shine {
+            height: 100%;
+            grid-column: 2 / span 2;
+            grid-row: 1 / span 2;
+            p {
+                font-size: 40px;
+            }
+        }
+    }
+}
+
+.border {
+    background-color: #e4fafa;
+    .w {
+        height: 150px;
+    }
+}
+
+.footer {
+    .w {
+        height: 400px;
+    }
+}
+
+.goTop {
+    background-color: #fff;
+    .w {
+        height: 100px;
+        a {
+            float: right;
+            color: #686868;
+            height: 100%;
+            line-height: 100px;
+        }
+    }
+}
